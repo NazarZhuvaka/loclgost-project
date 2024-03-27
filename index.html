@@ -5,38 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Document</title>
+    <title>LocalHostl</title>
   </head>
   <body>
 
 
-    <header class="header">
+    <header class="header container">
+
         <a href="#!">
             <img width="157px" height="41px" src="./img/icons/logo.svg" alt="logo-header" />
         </a>
-       <div class="">
-        <nav class="header__nav">
 
-          <ul class="header__ul" >
-              <li class="header__li"><a class="header__a is-active" href="/">Home</a></li>
-              <li class="header__li"><a class="header__a" href="/">Stays</a></li>
-              <li class="header__li"><a class="header__a" href="/">Become a host</a></li>
+       <div class="header__nav-container">
+          <nav class="header__nav">
 
-              <span class="material-icons icon-close" onclick="navToggle()">close</span>
+            <ul class="header__ul" >
+                <li class="header__li"><a class="header__a is-active" href="/">Home</a></li>
+                <li class="header__li"><a class="header__a" href="/">Stays</a></li>
+                <li class="header__li"><a class="header__a" href="/">Become a host</a></li>
+
+                <span class="material-icons icon-close" onclick="navToggle()">close</span>
+            </ul>
+            <span class="header__backdrop" onclick="navToggle()"></span>
+            <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+
+        </nav>
+
+          <ul class="header__personal">
+              <a href=""><img src="img/icons/notifications.svg" alt="notifications"/></a>
+              <a href=""><img src="img/icons/avatar.svg" alt="avatar" /></a>
           </ul>
-          <span class="header__backdrop" onclick="navToggle()"></span>
-          <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
-
-      </nav>
-
-        <ul>
-            <a href=""><img src="img/icons/notifications.svg" alt="notifications"/></a>
-            <a href=""><img src="img/icons/avatar.svg" alt="avatar" /></a>
-        </ul>
 
        </div>
 
     </header>
+
+
+
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__text">
+					<span>©</span>
+					<div id="year-clock"></div>
+					<span>All rights reserved.</span>
+					<span> Designed by</span>
+					<a href="/" class="footer__text__active"> SA7MAN.</a>
+				</div>
+				<div class="footer__text__link">
+					<a href="/">Twitter</a>
+					<a href="/">Dribbble</a>
+					<a href="/">Github</a>
+					<a href="/">Instagram</a>
+				</div>
+      </div>
+    </footer>
+
+
+
 
 
 

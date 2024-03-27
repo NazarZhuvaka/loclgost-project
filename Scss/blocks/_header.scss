@@ -2,54 +2,27 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 37px 0px;
+	padding: 14px 15px;
 	border-bottom: 1px solid var(--c-border);
 
-	&__backdrop {
-		display: none;
+	&__personal{
+		align-items: center;
+		display: flex;
+		gap: 20px;
 
 		@include tablet {
-			transform: translateX(120%);
-			display: block;
-			transition: var(--transition);
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			background: rgba(0, 0, 0, .3);
-			top: 0;
-			left: 0;
-		}
-	}
-
-	&__logo {
-		color: var(--c-white);
-		font-size: 28px;
-		font-weight: 700;
-		display: inline-flex;
-
-		span {
-			color: var(--c-primary);
+			display: none;
 		}
 	}
 
 	&__ul {
 		display: flex;
 		align-items: center;
-		gap: 24px;
+		gap: 30px;
 		z-index: 1;
 
 		@include tablet {
-			position: fixed;
-			width: 70%;
-			height: 100%;
-			flex-direction: column;
-			left: 0;
-			top: 0;
-			background: var(--c-primary);
-			align-items: center;
-			justify-content: center;
-			transform: translateX(-120%);
-			transition: var(--transition);
+			display: none;
 		}
 
 		&._active {
@@ -60,8 +33,6 @@
 			transform: translateX(0);
 		}
 
-
-
 		.icon-close {
 			position: absolute;
 			top: 40px;
@@ -71,16 +42,20 @@
 	}
 
 	&__a {
-		color: var(--c-text) ;
+		color: var(--c-text);
 		font-size: 16px;
 		font-weight: 400;
 		transition: var(--transition);
 
-		&.is-active,
+		
 		&:hover {
 			color: var(--c-primary);
 		}
 	}
+}
+
+.header__nav-container{
+	display: contents;
 }
 
 
