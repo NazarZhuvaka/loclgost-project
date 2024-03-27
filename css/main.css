@@ -301,6 +301,7 @@ a:hover {
 }
 .footer__links {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
