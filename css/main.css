@@ -218,8 +218,26 @@ a {
 
 a {
   transition: var(--transition);
+  position: relative;
+}
+a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  border-radius: 50%;
+  bottom: -3px;
+  position: absolute;
+  background: var(--c-primary);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--transition);
+}
+a:hover::after {
+  width: calc(100% - 8px);
 }
 a:hover {
+  opacity: 0.5;
   color: var(--c-primary);
 }
 
