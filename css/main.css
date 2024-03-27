@@ -315,6 +315,12 @@ a {
   padding: 30px 30px;
   background-color: #34373f;
 }
+.mobile-nav-wrapper._active {
+  transform: translateX(0);
+}
+.mobile-nav-wrapper._active ~ .header__backdrop {
+  transform: translateX(0);
+}
 .mobile-nav-wrapper a {
   color: var(--c-white) !important;
 }

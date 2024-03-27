@@ -3,7 +3,13 @@
     transform: translateX(-120%);
     transition: var(--transition);
 
+    &._active {
+        transform: translateX(0);
+    }
 
+    &._active~.header__backdrop {
+        transform: translateX(0);
+    }
 
     // display: none;
     z-index: 1;
