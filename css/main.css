@@ -333,6 +333,7 @@ a {
   gap: 20px;
   font-size: 20px;
 }
+
 .mobile-sub-nav {
   padding-top: 20px;
   padding-left: 20px;
@@ -340,6 +341,7 @@ a {
   gap: 14px;
   font-size: 16px;
 }
+
 .mobile-nav-header {
   display: flex;
   justify-content: space-between;

@@ -1,81 +1,62 @@
-.mobile-nav-wrapper{
+.mobile-nav-wrapper {
+  transform: translateX(-120%);
+  transition: var(--transition);
 
-    transform: translateX(-120%);
-    transition: var(--transition);
+  &._active {
+    transform: translateX(0);
+  }
 
-    &._active {
-        transform: translateX(0);
-    }
+  &._active ~ .header__backdrop {
+    transform: translateX(0);
+  }
 
-    &._active~.header__backdrop {
-        transform: translateX(0);
-    }
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  height: 100vh;
+  padding: 30px 30px;
+  background-color: #34373f;
 
-    // display: none;
-    z-index: 1;
-    position: absolute;
-    // right: 0;
-    top: 0;
-    bottom: 0;
-    width: 320px;
-    height: 100vh;
-    padding: 30px 30px;
-    background-color: #34373f;
+  a {
+    color: var(--c-white) !important;
+  }
 
-    a {
-        color:var(--c-white) !important;
-    }
-
-    &--open {
-        display: block;
-    }
-    
+  &--open {
+    display: block;
+  }
 }
 .mobile-nav {
-    display: grid;
-        gap: 20px;
-        font-size: 20px;
-    &__item {
-        
-    }
-
-    &__link {
-    }
-
-    &__link--dropdown {
-    }
+  display: grid;
+  gap: 20px;
+  font-size: 20px;
 }
 
 .mobile-sub-nav {
-    padding-top: 20px;
-    padding-left: 20px;
-    display: grid;
-    gap: 14px;
-    font-size: 16px;
-    &__item {
-    }
-
-    &__link {
-    }
+  padding-top: 20px;
+  padding-left: 20px;
+  display: grid;
+  gap: 14px;
+  font-size: 16px;
 }
 
-.mobile-nav-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255 , 0.2);
-    margin-bottom: 20px;
-    gap: 20px;
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  gap: 20px;
 }
 
-.mobile-cart{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-size: 22px;
-    font-weight: 500;
+.mobile-cart {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
 
-    flex-grow: 1;
-
+  flex-grow: 1;
 }
