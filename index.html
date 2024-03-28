@@ -806,8 +806,8 @@
 
 
         <!-- Map -->
-        <article data-tab-value="map" class="google-map">
-          <div id="map"></div>
+        <article data-tab-value="map" class="none google-map ">
+          <div data-tab-value="map" id="map"></div>
         </article>
 
         
@@ -897,27 +897,19 @@
 
 
 
-    <script src="./js/main.js"></script>
-    <script src="./js/animation.js"></script>
+    
     
     <script src="./js/show-more.js"></script>
 
     <script src="./js/map.js"></script>
     
-    <!-- <script>
-      function initMap() {
-        let uluru = {lat: -25.344, lng: 131}
-        let map = new google.maps.Map (
-          document.getElementById('map') , {zoom:5 , center:uluru}
-        );
-        let marker = new google.maps.Marker({position:uluru, map: map})
-      }
-    </script> -->
     
     <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqtNS5mRc_EeEqbt5V6N96t24To7YNldc&callback=initMap">
-</script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqtNS5mRc_EeEqbt5V6N96t24To7YNldc&callback=initMap">
+    </script>
 
+    <script src="./js/main.js"></script>
+    <script src="./js/animation.js"></script>
 
   </body>
 </html>
