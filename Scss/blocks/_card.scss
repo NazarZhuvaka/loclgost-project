@@ -7,14 +7,24 @@
 
     transition: var(--transition);
 
-    // &:hover{
-    //     scale: 1.01;
-    // }
-
     a{
         &:hover::after{
             display: none;
         }
+    }
+
+    
+
+    &__trend{
+        display: flex;
+        align-items: center;
+        color:var(--c-primary);
+        gap: 6px;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+
     }
 
     &-like{
@@ -28,9 +38,16 @@
         padding: 8px;
         border-radius: 50%;
 
+        transition: var(--transition);
+
         svg{
             display: flex;
 
+        }
+
+        &:hover{
+            opacity: 0.9;
+            background-color: rgb(253, 209, 224);
         }
     }
 
@@ -80,28 +97,49 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            margin-bottom: 14px;
         }
     }
 
     &__categore {
         position: relative;
         z-index: 3;
-        color: var(--c-text-muted);
-        font-size: 17px;
-        margin: 0;
+
+        margin-bottom: 4px;
+      
+        color: rgb(23, 30, 29);
+        font-family: var(--ff);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 2%;
 
     }
 
     &__title {
         margin: 0;
-        color: var(--c-card-dark);
-        font-size: 21px;
-        font-weight: 600;
+        
+
+        color: rgb(120, 120, 120);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 2%;
     }
 
     &__raiting {
         display: flex;
-        gap: 3px;
+        align-items: baseline;
+        gap: 6px;
+
+        color: rgb(23, 30, 29);
+
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 15px;
+
     }
 
     &__footer {
@@ -114,17 +152,30 @@
 
     &__price {
         display: flex;
-        align-items: flex-start;
+        align-items: baseline;
         gap: 3px;
 
-        color: var(--c-card-dark);
-        font-size: 21px;
+
+        color: rgb(23, 30, 29);
+
+        font-size: 19px;
         font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 2%;
 
         &::before{
             content: attr(data-value);
 
             font-size: 15px;
+        }
+
+        span{
+            color: rgb(120, 120, 120);
+
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 2%;
         }
     }
 
