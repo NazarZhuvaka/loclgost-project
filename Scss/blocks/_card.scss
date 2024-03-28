@@ -1,13 +1,37 @@
 .card {
+    border: 2px solid #E8ECF2;
+    border-radius: 20px;
+    max-width: 305px;
+
+    position: relative;
+
     a{
         &:hover::after{
             display: none;
         }
     }
-    
-    max-width: 305px;
 
-    position: relative;
+    &-like{
+        z-index: 5;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 27px;
+
+        background: white;
+        padding: 8px;
+        border-radius: 50%;
+
+        img{
+            display: flex;
+        }
+    }
+
+    &-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
     &__link{
         position: absolute;
@@ -25,12 +49,18 @@
         background-color: #fafafa;
         text-align: center;
 
+        img{
+            border-radius: 20px 20px 0 0;
+        }
+
     }
 
     &__desc {
         display: flex;
         flex-direction: column;
         gap: 6px;
+        padding: 16px;
+
 
 
         // padding: 14px 22px 28px;
@@ -38,6 +68,12 @@
         // height: 202px;
         border-radius: 0 0 20px 20px;
         background-color: #fff;
+
+        &-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     &__categore {

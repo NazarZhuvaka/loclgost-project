@@ -52,3 +52,11 @@ for (let btn of tabsBtns) {
     
   });
 }
+
+// Like btns
+
+const likeButton = document.getElementById('likeButton');
+
+likeButton.addEventListener('click', function() {
+    console.log('Button clicked!'); 
+  });
