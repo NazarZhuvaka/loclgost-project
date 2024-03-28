@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" />
+
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    
+  
+
+
     <title>LocalHostl</title>
   </head>
   <body>
@@ -794,8 +802,15 @@
         </div>
         <!-- Cards -->
 
+
+
+
         <!-- Map -->
-        <article data-tab-value="map" class="none card swiper-slide">map</article>
+        <article data-tab-value="map" class="google-map">
+          <div id="map"></div>
+        </article>
+
+        
         <!-- Map -->
 
 
@@ -876,12 +891,32 @@
     <!-- Mobile nav -->
 
 
+    
+
+    <!-- <div id="map"></div> -->
+
+
 
     <script src="./js/main.js"></script>
     <script src="./js/animation.js"></script>
     
     <script src="./js/show-more.js"></script>
 
+    <script src="./js/map.js"></script>
+    
+    <!-- <script>
+      function initMap() {
+        let uluru = {lat: -25.344, lng: 131}
+        let map = new google.maps.Map (
+          document.getElementById('map') , {zoom:5 , center:uluru}
+        );
+        let marker = new google.maps.Marker({position:uluru, map: map})
+      }
+    </script> -->
+    
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqtNS5mRc_EeEqbt5V6N96t24To7YNldc&callback=initMap">
+</script>
 
 
   </body>
