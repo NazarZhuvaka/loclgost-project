@@ -1,6 +1,11 @@
 .card {
-
-    width: 305px;
+    a{
+        &:hover::after{
+            display: none;
+        }
+    }
+    
+    max-width: 305px;
 
     position: relative;
 
@@ -99,4 +104,14 @@
             opacity: 0.8;
         }
     }
+}
+
+
+
+
+
+#cards-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }

@@ -440,8 +440,11 @@ a:hover {
 }
 
 .card {
-  width: 305px;
+  max-width: 305px;
   position: relative;
+}
+.card a:hover::after {
+  display: none;
 }
 .card__link {
   position: absolute;
@@ -511,4 +514,10 @@ a:hover {
 }
 .card__btn:hover {
   opacity: 0.8;
+}
+
+#cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */
