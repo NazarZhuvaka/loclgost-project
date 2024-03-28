@@ -32,7 +32,7 @@ for (let btn of tabsBtns) {
     for (let btn of tabsBtns) {
       btn.classList.remove("tab-controls__btn--active");
     }
-    //добавити активний клас до данного кнопки
+    //добавити активний клас до данноЇ кнопки
     this.classList.add("tab-controls__btn--active");
 
     // відобразити потрібні товари і hide непотрібні
