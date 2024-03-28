@@ -49,19 +49,24 @@ for (let btn of tabsBtns) {
 
 // Like btn
 
-// Отримуємо посилання на SVG-елемент і його шлях за їхнім id
-const likeButton = document.getElementById("likeButton");
-const pathElement = document.getElementById("myPath");
-let isLiked = false;
+// Отримуємо посилання на SVG-елемент і його шлях за їхнім класом
 
-likeButton.addEventListener("click", function () {
-  if (!isLiked) {
-    pathElement.setAttribute("fill", "red");
-    pathElement.setAttribute("stroke", "red");
-    isLiked = true;
-  } else {
-    pathElement.setAttribute("fill", "none");
-    pathElement.setAttribute("stroke", "#171E1D");
-    isLiked = false;
-  }
+const likeButtons = document.querySelectorAll('.likeButton');
+const pathElements = document.querySelectorAll('.myPath');
+
+// Додаємо слухача подій для кожного елемента
+likeButtons.forEach((likeButton, index) => {
+    let isLiked = false;
+
+    likeButton.addEventListener("click", function () {
+        if (!isLiked) {
+            pathElements[index].setAttribute("fill", "red");
+            pathElements[index].setAttribute("stroke", "red");
+            isLiked = true;
+        } else {
+            pathElements[index].setAttribute("fill", "none");
+            pathElements[index].setAttribute("stroke", "#171E1D");
+            isLiked = false;
+        }
+    });
 });
