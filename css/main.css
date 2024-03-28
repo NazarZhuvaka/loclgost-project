@@ -419,4 +419,33 @@ a:hover {
 }
 .tab-controls__btn--active:hover {
   background-color: var(--c-primary);
+}
+
+.stays-section {
+  padding: 38px 0 24px;
+}
+
+.stays__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stays__link-more {
+  max-width: 147px;
+  margin-inline: auto;
+  display: flex;
+  margin-top: 22px;
+  border-radius: 6px;
+  border: 1px solid var(--c-primary);
+  justify-content: center;
+  padding: 11px 0;
+  color: var(--c-primary);
+  font-size: 16px;
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.stays__link-more:hover::after {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
