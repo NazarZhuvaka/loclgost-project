@@ -74,7 +74,48 @@
 
 
         <!-- Cards -->
-        <article data-tab-value="card" class="card swiper-slide">card</article>
+
+        <!-- <article data-tab-value="card" class="card swiper-slide">
+          <img src="./img/bringwoods.png" alt="bringwoods">
+          card
+        </article> -->
+
+
+
+
+
+        <article data-tab-value="card" class="card swiper-slide">
+
+          <a href="#product-page" class="card__link"></a>
+
+          <div class="card__photo">
+            <img src="./img/bringwoods.png" alt="bringwoods">
+          </div>
+          <div class="card__desc">
+
+            
+              <div>
+                <div>
+                  <a href="#catagory" class="card__categore">Brightwoods Cabin</a>
+                  <h3 class="card__title">Bridlepath, Ontario, Canada</h3>
+                </div>
+                <img src="./img/icons/star.svg" alt="star">
+              </div>
+            
+
+            <div class="card__footer">
+
+              <div class="card__price" data-value="$">921 <span>/night</span></div>
+              <p class="card__chart">Price chart</p>
+            </div>
+
+          </div>
+        </article>
+
+
+
+
+
         <article data-tab-value="card" class="card swiper-slide">card</article>
         <article data-tab-value="card" class="card swiper-slide">card</article>
         <article data-tab-value="card" class="card swiper-slide">card</article>
@@ -118,8 +159,62 @@
       </div>
     </footer>
 
+    <!-- <div id="cards-container">
+      Місце для заповнення карти
+      
+    </div> -->
+
+    <!-- <template id="card-template">
+      <div class="card">
+        <img class="image" src="" alt="">
+        <div>
+          <h2 class="title">фівфіві</h2>
+        <p class="description"></p>
+        </div>
+        
+      </div>
+      <div class="card__footer">
+
+        <div class="price" data-value="$"> </div>
+        <span>/night</span>
+        
+      </div>
+    </template> -->
+
+    <template id="card-template" data-tab-value="card" class="card swiper-slide">
+
+      <a href="#product-page" class="card__link"></a>
+
+      <div class="card__photo">
+        <!-- <img src="./img/bringwoods.png" alt="bringwoods"> -->
+        <img class="image" src="" alt="">
+      </div>
+      <div class="card__desc">
+
+        
+          <div>
+            <div>
+              <a href="#catagory" class="title card__categore">Brightwoods Cabin</a>
+              <h3 class="description card__title">Bridlepath, Ontario, Canada</h3>
+            </div>
+            <img src="./img/icons/star.svg" alt="star">
+          </div>
+        
+
+        <div class="card__footer">
+
+          <div class="price card__price" data-value="$">921 <span>/night</span></div>
+          <p class="card__chart">Price chart</p>
+        </div>
+
+      </div>
+    </template>
 
 
+
+    <!-- Container-cart -->
+    <div id="cards-container" data-tab-value="card" class="card swiper-slide" ></div>
+    <!-- Container-cart -->
 
 
 
@@ -162,5 +257,57 @@
 
 
     <script src="./js/main.js"></script>
+
+    <script src="./js/data.js"></script>
+
+
+    <script>
+      // Оголошення масиву даних для карт
+      const cardData = [
+        {
+          title: 'Brightwoods Cabin',
+          description: 'Bridlepath, Ontario, Canada',
+          imageUrl: './img/bringwoods.png',
+          price: '658',
+        },
+        {
+          title: 'Urban Loft',
+          description: 'Georgina Bay, Ontario, Canada',
+          imageUrl: './img/loft.png',
+          price: '410',
+        },
+        // Додайте інші об'єкти, які представляють ваші карти
+      ];
+  
+      // Отримайте посилання на контейнер, куди ви будете вставляти карти
+      const cardsContainer = document.getElementById('cards-container');
+  
+      // Отримайте посилання на шаблон карти
+      const cardTemplate = document.getElementById('card-template');
+  
+      // Пройдіться по масиву cardData і створіть карти для кожного об'єкта
+      cardData.forEach(card => {
+        // Створіть нову копію шаблону карти
+        const newCard = cardTemplate.content.cloneNode(true);
+  
+        // Отримайте посилання на всі елементи карти в новій копії
+        const titleElement = newCard.querySelector('.title');
+        const descriptionElement = newCard.querySelector('.description');
+        const imageElement = newCard.querySelector('.image');
+        const priceElement = newCard.querySelector('.price');
+  
+        // Встановіть дані для кожного елемента карти
+        titleElement.textContent = card.title;
+        descriptionElement.textContent = card.description;
+        imageElement.src = card.imageUrl;
+        priceElement.textContent = card.price;
+  
+        // Додайте карту до контейнера
+        cardsContainer.appendChild(newCard);
+      });
+    </script>
+
+
+
   </body>
 </html>

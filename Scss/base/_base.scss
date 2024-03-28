@@ -35,21 +35,21 @@ a {
   outline: none;
 }
 
-.title {
-  margin-top: 90px;
-  font-size: 44px;
-  color: var(--c-white);
-  font-weight: 700;
-  margin-bottom: 17px;
-  @include mobile {
-    font-size: 32px;
-    margin-top: 50px;
-  }
+// .title {
+//   margin-top: 90px;
+//   font-size: 44px;
+//   color: var(--c-white);
+//   font-weight: 700;
+//   margin-bottom: 17px;
+//   @include mobile {
+//     font-size: 32px;
+//     margin-top: 50px;
+//   }
 
-  span {
-    color: var(--c-primary);
-  }
-}
+//   span {
+//     color: var(--c-primary);
+//   }
+// }
 
 .desc {
   color: var(--c-body);
