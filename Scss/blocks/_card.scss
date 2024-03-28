@@ -5,6 +5,12 @@
 
     position: relative;
 
+    transition: var(--transition);
+
+    &:hover{
+        scale: 1.01;
+    }
+
     a{
         &:hover::after{
             display: none;
