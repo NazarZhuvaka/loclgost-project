@@ -392,6 +392,7 @@ a:hover {
   align-items: center;
   border-radius: 9px;
   background-color: #eee;
+  border: 1px solid lightgrey;
 }
 @media (max-width: 576px) {
   .tab-controls {
@@ -419,6 +420,10 @@ a:hover {
 }
 .tab-controls__btn--active:hover {
   background-color: var(--c-primary);
+}
+
+.stays__position--active {
+  font-weight: 600;
 }
 
 .stays-section {
