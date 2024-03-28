@@ -1,4 +1,10 @@
 .stays__position{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.2;
+
     &--active{
         font-weight: 600;
     }
@@ -17,12 +23,14 @@
 
 
 
-.show-more{
+.show-more, .hide-all {
+    cursor: pointer;
     margin-inline: auto;
     display: flex;
     margin-top: 22px;
     border-radius: 6px;
     border: 1px solid var(--c-primary);
+    background: none;
     justify-content: center;
     padding: 11px 30px;
 
@@ -39,3 +47,4 @@
         opacity: 0.7;
     }
 }
+

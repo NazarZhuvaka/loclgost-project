@@ -401,6 +401,13 @@ a:hover {
   background-color: var(--c-primary);
 }
 
+.stays__position {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.2;
+}
 .stays__position--active {
   font-weight: 600;
 }
@@ -416,12 +423,14 @@ a:hover {
   padding-bottom: 22px;
 }
 
-.show-more {
+.show-more, .hide-all {
+  cursor: pointer;
   margin-inline: auto;
   display: flex;
   margin-top: 22px;
   border-radius: 6px;
   border: 1px solid var(--c-primary);
+  background: none;
   justify-content: center;
   padding: 11px 30px;
   color: var(--c-primary);
@@ -431,7 +440,7 @@ a:hover {
   font-weight: 500;
   transition: var(--transition);
 }
-.show-more:hover {
+.show-more:hover, .hide-all:hover {
   opacity: 0.7;
 }
 
@@ -595,4 +604,12 @@ a:hover {
 
 .card.hovered {
   transform: translateY(-5px); /* Змінюємо положення картки при наведенні */
+}
+
+.cards__item:nth-child(n+9) {
+  display: none;
+}
+
+.cards__item.is-visible {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

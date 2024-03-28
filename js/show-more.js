@@ -1,17 +1,32 @@
 const showMore = document.querySelector('.show-more');
-const productsLength = document.querySelectorAll('.cards__item').length;
-
+const hideButton = document.querySelector('.hide');
+const products = document.querySelectorAll('.cards__item');
 let items = 4;
 
-showMore.addEventListener('click' , () => {
+showMore.addEventListener('click', () => {
     items += 4;
-    const array = Array.from(document.querySelector('.card-products').children);
 
-    const visItems = array.slice(0, items);
+    products.forEach((product, index) => {
+        if (index < items) {
+            product.classList.add('is-visible');
+        }
+    });
 
-    visItems.forEach(el => el.classList.add('is-visible'));
+    if (items >= products.length) {
+        showMore.style.display = 'none';
+        hideButton.style.display = 'block';
+    }
+});
 
-    // if (visItems.length === productsLength ) {
-    //     showMore.style.display = 'none'
-    // }
-})
+hideButton.addEventListener('click', () => {
+    items = 4;
+
+    products.forEach((product, index) => {
+        if (index >= items) {
+            product.classList.remove('is-visible');
+        }
+    });
+
+    showMore.style.display = 'block';
+    hideButton.style.display = 'none';
+});
