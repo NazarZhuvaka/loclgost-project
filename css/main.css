@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --ff: "Inter", sans-serif;
   --ff-sec: "DM Sans", sans-serif;
@@ -442,9 +443,6 @@ a:hover {
   position: relative;
   transition: var(--transition);
 }
-.card:hover {
-  scale: 1.01;
-}
 .card a:hover::after {
   display: none;
 }
@@ -549,4 +547,13 @@ a:hover {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+
+.card {
+  /* Стилі вашої картки */
+  transition: transform 0.3s ease;
+}
+
+.card.hovered {
+  transform: translateY(-5px); /* Змінюємо положення картки при наведенні */
 }/*# sourceMappingURL=main.css.map */
