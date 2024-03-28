@@ -1,25 +1,21 @@
 //Mobile menu open and close
 function navToggle() {
-	document.getElementById("headerUl").classList.toggle("_active");
-	document.getElementById("html").classList.toggle("_overflow");
+  document.getElementById("headerUl").classList.toggle("_active");
+  document.getElementById("html").classList.toggle("_overflow");
 }
 
 // Time
-window.onload = function() {
-    window.setInterval(function(){
-        var date = new Date();
+window.onload = function () {
+  window.setInterval(function () {
+    var date = new Date();
 
+    var years = date.getFullYear();
 
-        var years = date.getFullYear();
-        
+    var clock = years;
 
-        var clock = years;
-
-        document.getElementById("year-clock").innerHTML = clock; 
-    }
-    );
+    document.getElementById("year-clock").innerHTML = clock;
+  });
 };
-
 
 // Tabs
 
@@ -48,15 +44,24 @@ for (let btn of tabsBtns) {
         }
       }
     }
-
-    
   });
 }
 
-// Like btns
+// Like btn
 
-const likeButton = document.getElementById('likeButton');
+// Отримуємо посилання на SVG-елемент і його шлях за їхнім id
+const likeButton = document.getElementById("likeButton");
+const pathElement = document.getElementById("myPath");
+let isLiked = false;
 
-likeButton.addEventListener('click', function() {
-    console.log('Button clicked!'); 
-  });
+likeButton.addEventListener("click", function () {
+  if (!isLiked) {
+    pathElement.setAttribute("fill", "red");
+    pathElement.setAttribute("stroke", "red");
+    isLiked = true;
+  } else {
+    pathElement.setAttribute("fill", "none");
+    pathElement.setAttribute("stroke", "#171E1D");
+    isLiked = false;
+  }
+});
