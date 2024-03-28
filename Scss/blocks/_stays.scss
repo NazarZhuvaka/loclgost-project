@@ -17,15 +17,14 @@
 
 
 
-.stays__link-more{
-    max-width: 147px;
+.show-more{
     margin-inline: auto;
     display: flex;
     margin-top: 22px;
     border-radius: 6px;
     border: 1px solid var(--c-primary);
     justify-content: center;
-    padding: 11px 0;
+    padding: 11px 30px;
 
 
     color: var(--c-primary);
@@ -34,7 +33,9 @@
     line-height: 26px;
     font-weight: 500;
 
-    &:hover::after{
-        display: none;
+    transition: var(--transition);
+
+    &:hover{
+        opacity: 0.7;
     }
 }

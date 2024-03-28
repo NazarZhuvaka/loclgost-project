@@ -55,6 +55,13 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+
+
+        ul {
+            display: flex;
+        flex-wrap: wrap;
+        gap: 20px;  
+        }
     }
 
     &__link{
@@ -219,3 +226,19 @@
 .card.hovered {
     transform: translateY(-5px); /* Змінюємо положення картки при наведенні */
 }
+
+
+
+
+
+// .cards__item:nth-child(n+5){
+//     display: none;
+// }
+
+// .cards__item.is-visible{
+//     display: block;
+// }
+
+// .is-visible{
+//     display: block;
+// }
