@@ -613,6 +613,27 @@ a:hover {
 }
 .find__form {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.find__form-date {
+  display: flex;
+  gap: 14px;
+}
+.find__form-accom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  max-width: 547px;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 4px;
+}
+.find__form-accom input {
+  width: 100%;
+  background: none;
+  border: none;
 }
 .find__title {
   font-size: 40.4px;

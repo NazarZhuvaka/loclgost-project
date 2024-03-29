@@ -71,6 +71,3 @@ likeButtons.forEach((likeButton, index) => {
     });
 });
 
-// date
-
-document.getElementById('datePicker').valueAsDate = new Date();
