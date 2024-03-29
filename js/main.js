@@ -71,3 +71,43 @@ likeButtons.forEach((likeButton, index) => {
     });
 });
 
+
+// drop menu
+
+document.addEventListener("DOMContentLoaded", function() {
+  const guestButton = document.getElementById("guestButton");
+  const dropdownContent = document.getElementById("dropdownContent");
+  const guestOption = document.getElementById("guestOption");
+  const authOption = document.getElementById("authOption");
+
+  // При кліку на кнопку відкрити/закрити випадаючий список
+  guestButton.addEventListener("click", function() {
+    dropdownContent.classList.toggle("show");
+  });
+
+  // При виборі "Guest"
+  guestOption.addEventListener("click", function() {
+    guestButton.querySelector("p").textContent = "Guest";
+    dropdownContent.classList.remove("show");
+  });
+
+  // При виборі "Авторизований користувач"
+  authOption.addEventListener("click", function() {
+    guestButton.querySelector("p").textContent = "Авторизований користувач";
+    dropdownContent.classList.remove("show");
+  });
+
+  // Закрити випадаючий список при кліку за межами нього
+  window.addEventListener("click", function(event) {
+    if (!event.target.matches('.find__form-guest')) {
+      const dropdowns = document.getElementsByClassName("dropdown-content");
+      for (let i = 0; i < dropdowns.length; i++) {
+        const openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  });
+});
+
