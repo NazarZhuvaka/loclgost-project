@@ -171,3 +171,25 @@
 .green-word {
   color: var(--c-primary) !important;
 }
+
+
+
+
+
+
+
+ /* Стилізація тексту */
+ .find__desc {
+  opacity: 0; /* Початкова прозорість */
+  animation: fadeIn 6s ease forwards; /* Виклик анімації fadeIn */
+}
+
+/* Ключові кадри анімації */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Початкова прозорість */
+  }
+  to {
+    opacity: 1; /* Кінцева прозорість */
+  }
+}

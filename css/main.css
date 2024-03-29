@@ -749,6 +749,21 @@ a:hover {
   color: var(--c-primary) !important;
 }
 
+/* Стилізація тексту */
+.find__desc {
+  opacity: 0; /* Початкова прозорість */
+  animation: fadeIn 6s ease forwards; /* Виклик анімації fadeIn */
+}
+
+/* Ключові кадри анімації */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Початкова прозорість */
+  }
+  to {
+    opacity: 1; /* Кінцева прозорість */
+  }
+}
 [type=date] {
   background: #fff url(./../img/icons/date.svg) 97% 50% no-repeat;
   cursor: pointer;
@@ -801,4 +816,31 @@ input {
 .links-grid {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
+}
+
+.links {
+  padding: 50px 0;
+}
+
+/* Стилізація підсекцій */
+.links__nav {
+  opacity: 0; /* Початкова прозорість */
+  transition: opacity 4s ease; /* Плавне зміна прозорості */
+}
+
+/* Призначення анімації з'явлення для підсекцій при скролі */
+.links__nav.animate {
+  opacity: 1;
+}
+
+.card {
+  background-color: #f0f0f0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.active {
+  opacity: 1;
+  transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */
