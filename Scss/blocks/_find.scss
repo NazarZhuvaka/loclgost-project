@@ -1,47 +1,46 @@
-.find{
+.find {
+  background-image: url(./../img/bg.png);
+  padding: 50px 0 30px;
+  &__title {
+    font-size: 40.4px;
+    max-width: 538px;
+    font-weight: 700;
+    line-height: 110%;
 
-    padding: 50px 0 30px;
-    &__title{
-        font-size: 40.4px;
-        max-width: 538px;
-        font-weight: 700;
-        line-height: 110%;
+    margin-bottom: 8px;
+  }
+  &__desc {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 120%;
 
-        margin-bottom: 8px;
-    }
-    &__desc{
-        color: rgb(0, 0, 0);
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 120%;
-    }
+    margin-bottom: 24px;
+  }
 }
 
-
-
 #animated-title {
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  #animated-title span {
-    display: inline-block;
-    opacity: 0;
-    animation: reveal 1s forwards;
-  }
-  
-  @keyframes reveal {
-    from {
-      opacity: 0;
-      transform: translateX(-50%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
+  overflow: hidden;
+  white-space: nowrap;
+}
 
-  .green-word {
-    color: var(--c-primary) !important;
+#animated-title span {
+  display: inline-block;
+  opacity: 0;
+  animation: reveal 1s forwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.green-word {
+  color: var(--c-primary) !important;
+}
