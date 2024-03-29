@@ -20,25 +20,29 @@
     background: rgb(255, 255, 255);
 
     &-search{
+        justify-content: center;
         display: flex;
         align-items: center;
         border: 1px solid rgb(217, 217, 217);
         gap: 5px;
         border-radius: 4px;
+
+        
   
         background: rgb(255, 255, 255);
 
-        padding: 0 12px;
+        padding: 23px 12px;
 
         width: 100%;
         max-width: 142px;
 
         background: var(--c-primary);
-        input {
-            width: 100%;
-            background: none;
-            border: none;
-          }
+        
+        border: none;
+
+        color: white;
+
+            
     }
 
     &-guest{
@@ -110,9 +114,7 @@
 
 
 .input-date{
-    padding: 31px 12px;
-    width: 100%;
-        max-width: 173px;
+    height: 64px;
 }
 
 

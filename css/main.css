@@ -623,21 +623,19 @@ a:hover {
   background: rgb(255, 255, 255);
 }
 .find__form-search {
+  justify-content: center;
   display: flex;
   align-items: center;
   border: 1px solid rgb(217, 217, 217);
   gap: 5px;
   border-radius: 4px;
   background: rgb(255, 255, 255);
-  padding: 0 12px;
+  padding: 23px 12px;
   width: 100%;
   max-width: 142px;
   background: var(--c-primary);
-}
-.find__form-search input {
-  width: 100%;
-  background: none;
   border: none;
+  color: white;
 }
 .find__form-guest {
   display: flex;
@@ -692,9 +690,7 @@ a:hover {
 }
 
 .input-date {
-  padding: 31px 12px;
-  width: 100%;
-  max-width: 173px;
+  height: 64px;
 }
 
 #animated-title {
