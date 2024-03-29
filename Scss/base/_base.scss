@@ -36,34 +36,6 @@ a {
   outline: none;
 }
 
-// .title {
-//   margin-top: 90px;
-//   font-size: 44px;
-//   color: var(--c-white);
-//   font-weight: 700;
-//   margin-bottom: 17px;
-//   @include mobile {
-//     font-size: 32px;
-//     margin-top: 50px;
-//   }
-
-//   span {
-//     color: var(--c-primary);
-//   }
-// }
-
-.desc {
-  color: var(--c-body);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 160%;
-  max-width: 460px;
-  margin-bottom: 40px;
-  @include mobile {
-    font-size: 14px;
-  }
-}
-
 a{
   transition: var(--transition);
   position: relative;

@@ -191,20 +191,6 @@ a {
   outline: none;
 }
 
-.desc {
-  color: var(--c-body);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 160%;
-  max-width: 460px;
-  margin-bottom: 40px;
-}
-@media (max-width: 576px) {
-  .desc {
-    font-size: 14px;
-  }
-}
-
 a {
   transition: var(--transition);
   position: relative;
@@ -617,4 +603,46 @@ a:hover {
 #map {
   height: 400px; /* The height is 400 pixels */
   width: 100%; /* The width is the width of the web page */
+}
+
+.find {
+  padding: 50px 0 30px;
+}
+.find__title {
+  font-size: 40.4px;
+  max-width: 538px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 8px;
+}
+.find__desc {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+#animated-title {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#animated-title span {
+  display: inline-block;
+  opacity: 0;
+  animation: reveal 1s forwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.green-word {
+  color: var(--c-primary) !important;
 }/*# sourceMappingURL=main.css.map */
