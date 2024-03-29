@@ -615,11 +615,45 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 14px;
   padding: 10px 12px;
   border: 0.7px solid rgb(232, 236, 242);
   border-radius: 10px;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.02);
   background: rgb(255, 255, 255);
+}
+.find__form-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(217, 217, 217);
+  gap: 5px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  padding: 0 12px;
+  width: 100%;
+  max-width: 142px;
+  background: var(--c-primary);
+}
+.find__form-search input {
+  width: 100%;
+  background: none;
+  border: none;
+}
+.find__form-guest {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(217, 217, 217);
+  gap: 5px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  padding: 0 12px;
+  width: 100%;
+  max-width: 173px;
+}
+.find__form-guest input {
+  width: 100%;
+  background: none;
+  border: none;
 }
 .find__form-date {
   display: flex;
@@ -655,6 +689,12 @@ a:hover {
   font-weight: 300;
   line-height: 120%;
   margin-bottom: 24px;
+}
+
+.input-date {
+  padding: 31px 12px;
+  width: 100%;
+  max-width: 173px;
 }
 
 #animated-title {
