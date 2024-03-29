@@ -627,7 +627,7 @@ a:hover {
   display: flex;
   align-items: center;
   border: 1px solid rgb(217, 217, 217);
-  gap: 5px;
+  gap: 9px;
   border-radius: 4px;
   background: rgb(255, 255, 255);
   padding: 23px 12px;
@@ -636,11 +636,16 @@ a:hover {
   background: var(--c-primary);
   border: none;
   color: white;
+  transition: var(--transition);
+}
+.find__form-search:hover {
+  opacity: 0.8;
 }
 .find__form-guest {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border: 1px solid rgb(217, 217, 217);
   gap: 5px;
   border-radius: 4px;
@@ -691,6 +696,7 @@ a:hover {
 .dropdown-content {
   top: 67px;
   left: 0%;
+  width: 100%;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -698,6 +704,9 @@ a:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
+}
+.dropdown-content a:hover::after {
+  display: none;
 }
 
 .dropdown-content a {

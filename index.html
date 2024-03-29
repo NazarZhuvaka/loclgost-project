@@ -65,10 +65,23 @@
 
         <form class="find__form"  action="">
 
-          <label class="find__form-accom">
+          <!-- <label class="find__form-accom">
             <input placeholder="Accommodation" type="text" name="" id="">
             <img src="./img/icons/home.svg" alt="home">
+          </label> -->
+
+          <label class="find__form-accom">
+            <input placeholder="Accommodation" type="text" name="accommodation" list="accommodationList" id="accommodationInput">
+            <img src="./img/icons/home.svg" alt="home">
           </label>
+          
+          <datalist id="accommodationList">
+            <option value="Hotel">
+            <option value="Hostel">
+            <option value="Apartment">
+            <option value="House">
+            <!-- Додайте сюди більше варіантів, які ви хочете відображати в підказках -->
+          </datalist>
 
 
 
@@ -97,7 +110,7 @@
 
               <div class="dropdown-content" id="dropdownContent">
                 <a href="#" id="guestOption">Guest</a>
-                <a href="#" id="authOption">Авторизований користувач</a>
+                <a href="#" id="authOption">User</a>
               </div>
             </button>
             
@@ -129,6 +142,9 @@
       </div>
 
     </section>
+
+
+    <div id="searchResults"></div>
 
 
 
@@ -989,6 +1005,7 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/animation.js"></script>
+
 
   </body>
 </html>

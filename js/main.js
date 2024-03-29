@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // При виборі "Авторизований користувач"
   authOption.addEventListener("click", function() {
-    guestButton.querySelector("p").textContent = "Авторизований користувач";
+    guestButton.querySelector("p").textContent = "User";
     dropdownContent.classList.remove("show");
   });
 
