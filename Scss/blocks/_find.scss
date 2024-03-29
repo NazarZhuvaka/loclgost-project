@@ -1,9 +1,16 @@
 .find {
   background-image: url(./../img/bg.png);
+  background-position: center;
+    background-repeat: no-repeat;
   padding: 50px 0 30px;
+
+  &__form{
+    display: flex;
+  }
   &__title {
     font-size: 40.4px;
-    max-width: 538px;
+    max-width: 577px;
+
     font-weight: 700;
     line-height: 110%;
 
@@ -18,6 +25,11 @@
     margin-bottom: 24px;
   }
 }
+
+
+
+
+
 
 #animated-title {
   overflow: hidden;

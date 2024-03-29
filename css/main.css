@@ -607,11 +607,16 @@ a:hover {
 
 .find {
   background-image: url(./../img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 50px 0 30px;
+}
+.find__form {
+  display: flex;
 }
 .find__title {
   font-size: 40.4px;
-  max-width: 538px;
+  max-width: 577px;
   font-weight: 700;
   line-height: 110%;
   margin-bottom: 8px;
@@ -647,4 +652,33 @@ a:hover {
 }
 .green-word {
   color: var(--c-primary) !important;
+}
+
+[type=date] {
+  background: #fff url(./../img/icons/date.svg) 97% 50% no-repeat;
+  cursor: pointer;
+}
+
+[type=date]::-webkit-inner-spin-button {
+  display: none;
+  cursor: pointer;
+}
+
+[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* custom styles */
+label {
+  display: block;
+}
+
+input {
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 190px;
 }/*# sourceMappingURL=main.css.map */
