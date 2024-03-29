@@ -28,7 +28,7 @@ function animateTitle() {
       span.classList.add("green-word"); // Додаємо клас для зеленого слова
     }
     span.textContent = word;
-    span.style.animationDelay = `${0.3 * index}s`; // Затримка анімації
+    span.style.animationDelay = `${0.2 * index}s`; // Затримка анімації
     title.appendChild(span);
 
     if (index < words.length - 1) {
@@ -74,6 +74,23 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   revealCards();
+});
+
+
+
+
+
+
+// 
+
+document.addEventListener("DOMContentLoaded", function() {
+  var animatedContainer = document.getElementById('animated-container');
+  var animatedTitle = document.getElementById('animated-title');
+  var animatedDesc = document.querySelector('.find__desc');
+
+  animatedContainer.classList.add('animated');
+  animatedTitle.classList.add('animated');
+  animatedDesc.classList.add('animated');
 });
 
 

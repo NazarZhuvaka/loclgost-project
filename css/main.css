@@ -825,7 +825,7 @@ input {
 /* Стилізація підсекцій */
 .links__nav {
   opacity: 0; /* Початкова прозорість */
-  transition: opacity 4s ease; /* Плавне зміна прозорості */
+  transition: opacity 3s ease; /* Плавне зміна прозорості */
 }
 
 /* Призначення анімації з'явлення для підсекцій при скролі */
@@ -841,6 +841,29 @@ input {
 }
 
 .card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.find__container {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.find__title {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease 0.3s, transform 0.8s ease 0.8s;
+}
+
+.find__desc {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease 0.6s, transform 0.8s ease 0.8s;
+}
+
+.animated {
   opacity: 1;
   transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */
