@@ -70,3 +70,27 @@ likeButtons.forEach((likeButton, index) => {
         }
     });
 });
+
+
+
+// drop menu
+
+document.addEventListener("DOMContentLoaded", function() {
+  const checkInButton = document.getElementById("checkInButton");
+  const dateDropdown = document.getElementById("dateDropdown");
+  const confirmDateButton = document.getElementById("confirmDate");
+  const arrivalDateInput = document.getElementById("arrivalDate");
+
+  // При кліку на кнопку Check-in, випадний список з'являється
+  checkInButton.addEventListener("click", function() {
+    dateDropdown.style.display = "block";
+  });
+
+  // При кліку на кнопку Confirm, вибрана дата зберігається
+  confirmDateButton.addEventListener("click", function() {
+    const selectedDate = arrivalDateInput.value;
+    console.log("Selected Arrival Date:", selectedDate);
+    // Можете використовувати значення selectedDate для подальшої обробки
+    dateDropdown.style.display = "none"; // Ховаємо випадний список після підтвердження
+  });
+});
