@@ -30,3 +30,10 @@ hideButton.addEventListener('click', () => {
     showMore.style.display = 'block';
     hideButton.style.display = 'none';
 });
+
+
+
+
+
+
+
