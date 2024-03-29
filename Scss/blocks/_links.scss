@@ -1,0 +1,41 @@
+.links {
+    padding: 40px 0 40px;
+
+    background: rgb(244, 244, 244);
+
+    &__container {
+        
+    }
+
+    &__nav {
+        
+    }
+
+    &__nav--services {
+    }
+
+    &__nav-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        margin-bottom: 14px;
+    }
+
+    &__list {
+        display: grid;
+    gap: 14px;
+    }
+
+    &__list-item {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+}
+
+
