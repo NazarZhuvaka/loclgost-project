@@ -31,6 +31,8 @@
   border-radius: 7px;
   background: rgb(255, 255, 255);
   max-width: 530px;
+
+  padding: 38px 28px;
 }
 
 .card-section {
@@ -43,6 +45,24 @@
 
   &__name-starts{
     display: flex;
+    gap: 6px;
+    margin-bottom: 17px;
+    a {
+      color: rgb(0, 194, 159);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0.2;
+      text-decoration-line: underline;
+
+      padding-left: 8px;
+
+      border-left: 1px solid rgb(232, 236, 242);
+
+      &:hover::after{
+        display: none;
+      }
+    }
   }
 
   &__name-categore {
@@ -51,6 +71,8 @@
     font-weight: 600;
     line-height: 32px;
     letter-spacing: 0.2;
+
+    margin-bottom: 6px;
   }
 
   &__name-title {
@@ -58,16 +80,11 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 17px;
+
+    margin-bottom: 12px;
   }
 
-  &-starts {
-    color: rgb(0, 194, 159);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0.2;
-    text-decoration-line: underline;
-  }
+  
 
   &__name-raiting {
   }
@@ -78,6 +95,8 @@
     font-weight: 400;
     line-height: 160%;
     letter-spacing: 0.2;
+
+    margin-bottom: 28px;
   }
 
   &__footer {

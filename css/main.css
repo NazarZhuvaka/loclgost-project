@@ -158,7 +158,7 @@ body {
   font-family: var(--ff);
   color: var(--c-text);
   position: relative;
-  background: rgb(255, 255, 255);
+  background: #FAFAFA;
 }
 
 html._overflow {
@@ -898,6 +898,7 @@ input {
   border-radius: 7px;
   background: rgb(255, 255, 255);
   max-width: 530px;
+  padding: 38px 28px;
 }
 
 .card-section {
@@ -906,6 +907,21 @@ input {
 
 .card__name-starts {
   display: flex;
+  gap: 6px;
+  margin-bottom: 17px;
+}
+.card__name-starts a {
+  color: rgb(0, 194, 159);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.2;
+  text-decoration-line: underline;
+  padding-left: 8px;
+  border-left: 1px solid rgb(232, 236, 242);
+}
+.card__name-starts a:hover::after {
+  display: none;
 }
 .card__name-categore {
   color: rgb(23, 30, 29);
@@ -913,20 +929,14 @@ input {
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0.2;
+  margin-bottom: 6px;
 }
 .card__name-title {
   color: rgb(23, 30, 29);
   font-size: 16px;
   font-weight: 400;
   line-height: 17px;
-}
-.card-starts {
-  color: rgb(0, 194, 159);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0.2;
-  text-decoration-line: underline;
+  margin-bottom: 12px;
 }
 .card__name-desc {
   color: rgb(23, 30, 29);
@@ -934,6 +944,7 @@ input {
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0.2;
+  margin-bottom: 28px;
 }
 .card__price {
   color: rgb(23, 30, 29);
