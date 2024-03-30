@@ -1,5 +1,5 @@
 .swiper {
-  width: 600px;
+  width: 782px;
   height: 300px;
 
   &-block{
@@ -23,13 +23,19 @@
 
 .card-info{
   display: flex;
+  justify-content: space-between;
 }
 
 .card-name{
-  background: chocolate;
-  border-radius: 7px;
-  border: 1px solid green;
+  border: 1px solid rgb(232, 236, 242);
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
   max-width: 530px;
+}
+
+.card-section{
+  max-width: 1370px;
+
 }
 
 .card {

@@ -868,7 +868,7 @@ input {
 }
 
 .swiper {
-  width: 600px;
+  width: 782px;
   height: 300px;
 }
 .swiper-block {
@@ -890,11 +890,16 @@ input {
 
 .card-info {
   display: flex;
+  justify-content: space-between;
 }
 
 .card-name {
-  background: chocolate;
+  border: 1px solid rgb(232, 236, 242);
   border-radius: 7px;
-  border: 1px solid green;
+  background: rgb(255, 255, 255);
   max-width: 530px;
+}
+
+.card-section {
+  max-width: 1370px;
 }/*# sourceMappingURL=main.css.map */
