@@ -1,6 +1,6 @@
 .swiper {
   width: 782px;
-  height: 300px;
+  height: 438px;
 
   &-block {
     height: 410px;
@@ -32,7 +32,7 @@
   background: rgb(255, 255, 255);
   max-width: 530px;
 
-  padding: 38px 28px;
+  padding: 34px 28px;
 }
 
 .card-section {
@@ -81,7 +81,6 @@
     font-weight: 400;
     line-height: 17px;
 
-    margin-bottom: 12px;
   }
 
   
@@ -100,6 +99,7 @@
   }
 
   &__footer {
+    margin-bottom: 19px;
   }
 
   &__price {
@@ -110,11 +110,23 @@
     letter-spacing: 0.2;
   }
 
-  &-btn {
+  &__name-btn {
     padding: 12px 0;
     border-radius: 6px;
 
+    margin-bottom: 28px;
+
     background: rgb(0, 194, 159);
+
+
+    color: rgb(255, 255, 255);
+    max-width: 474px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.46px;
+    text-align: center;
   }
 
   &__trend {
@@ -126,6 +138,16 @@
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0.2;
+
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(232, 236, 242);
+    padding-bottom: 12px;
+
+    &__avatar{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
     &-title {
       color: rgb(23, 30, 29);
@@ -144,15 +166,33 @@
     }
 
     &-cont{
+      padding-top: 8px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      span{
+        display: flex;
+        gap: 10px;
+      }
     }
   }
 
   &-sup {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
     border-radius: 17px;
 
     background: rgb(222, 255, 249);
+
+
+    color: rgb(0, 194, 159);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -1;
   }
 }

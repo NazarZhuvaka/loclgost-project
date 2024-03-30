@@ -869,7 +869,7 @@ input {
 
 .swiper {
   width: 782px;
-  height: 300px;
+  height: 438px;
 }
 .swiper-block {
   height: 410px;
@@ -898,7 +898,7 @@ input {
   border-radius: 7px;
   background: rgb(255, 255, 255);
   max-width: 530px;
-  padding: 38px 28px;
+  padding: 34px 28px;
 }
 
 .card-section {
@@ -936,7 +936,6 @@ input {
   font-size: 16px;
   font-weight: 400;
   line-height: 17px;
-  margin-bottom: 12px;
 }
 .card__name-desc {
   color: rgb(23, 30, 29);
@@ -946,6 +945,9 @@ input {
   letter-spacing: 0.2;
   margin-bottom: 28px;
 }
+.card__footer {
+  margin-bottom: 19px;
+}
 .card__price {
   color: rgb(23, 30, 29);
   font-size: 36px;
@@ -953,10 +955,19 @@ input {
   line-height: 39px;
   letter-spacing: 0.2;
 }
-.card-btn {
+.card__name-btn {
   padding: 12px 0;
   border-radius: 6px;
+  margin-bottom: 28px;
   background: rgb(0, 194, 159);
+  color: rgb(255, 255, 255);
+  max-width: 474px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.46px;
+  text-align: center;
 }
 .card-host {
   color: rgb(120, 120, 120);
@@ -964,6 +975,14 @@ input {
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0.2;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(232, 236, 242);
+  padding-bottom: 12px;
+}
+.card-host__avatar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .card-host-title {
   color: rgb(23, 30, 29);
@@ -980,11 +999,25 @@ input {
   letter-spacing: 0.2;
 }
 .card-host-cont {
+  padding-top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.card-host-cont span {
+  display: flex;
+  gap: 10px;
+}
 .card-sup {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
   border-radius: 17px;
   background: rgb(222, 255, 249);
+  color: rgb(0, 194, 159);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -1;
 }/*# sourceMappingURL=main.css.map */
