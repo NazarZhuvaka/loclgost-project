@@ -41,6 +41,10 @@
   &__desc-container {
   }
 
+  &__name-starts{
+    display: flex;
+  }
+
   &__name-categore {
     color: rgb(23, 30, 29);
     font-size: 29px;
@@ -118,6 +122,12 @@
       font-weight: 400;
       line-height: 15px;
       letter-spacing: 0.2;
+    }
+
+    &-cont{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
