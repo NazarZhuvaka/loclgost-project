@@ -44,7 +44,7 @@
   &__desc-container {
   }
 
-  &__name-starts{
+  &__name-starts {
     display: flex;
     gap: 6px;
     margin-bottom: 17px;
@@ -60,7 +60,7 @@
 
       border-left: 1px solid rgb(232, 236, 242);
 
-      &:hover::after{
+      &:hover::after {
         display: none;
       }
     }
@@ -81,10 +81,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 17px;
-
   }
-
-  
 
   &__name-raiting {
   }
@@ -110,7 +107,7 @@
     line-height: 39px;
     letter-spacing: 0.2;
 
-    &::before{
+    &::before {
       font-size: 36px;
     }
   }
@@ -122,7 +119,6 @@
     margin-bottom: 28px;
 
     background: rgb(0, 194, 159);
-
 
     color: rgb(255, 255, 255);
     max-width: 474px;
@@ -148,7 +144,7 @@
     border-bottom: 1px solid rgb(232, 236, 242);
     padding-bottom: 12px;
 
-    &__avatar{
+    &__avatar {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -170,14 +166,14 @@
       letter-spacing: 0.2;
     }
 
-    &-cont{
+    &-cont {
       padding-top: 8px;
 
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      span{
+      span {
         display: flex;
         gap: 10px;
       }
@@ -192,7 +188,6 @@
     border-radius: 17px;
 
     background: rgb(222, 255, 249);
-
 
     color: rgb(0, 194, 159);
     font-size: 16px;
