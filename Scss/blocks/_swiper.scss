@@ -7,6 +7,7 @@
   }
 
   &-wrapper {
+    gap: 14px;
     cursor: pointer;
     img {
       border-radius: 8px;
@@ -32,7 +33,7 @@
   background: rgb(255, 255, 255);
   max-width: 530px;
 
-  padding: 34px 28px;
+  padding: 37px 28px;
 }
 
 .card-section {
@@ -108,6 +109,10 @@
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 0.2;
+
+    &::before{
+      font-size: 36px;
+    }
   }
 
   &__name-btn {
