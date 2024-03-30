@@ -2,16 +2,16 @@
   width: 782px;
   height: 300px;
 
-  &-block{
+  &-block {
     height: 410px;
   }
 
   &-wrapper {
     cursor: pointer;
-    img{
+    img {
       border-radius: 8px;
     }
-    &-low{
+    &-low {
       height: 90px !important;
     }
   }
@@ -21,50 +21,109 @@
   margin-bottom: 10px;
 }
 
-.card-info{
+.card-info {
   display: flex;
   justify-content: space-between;
 }
 
-.card-name{
+.card-name {
   border: 1px solid rgb(232, 236, 242);
-    border-radius: 7px;
-    background: rgb(255, 255, 255);
+  border-radius: 7px;
+  background: rgb(255, 255, 255);
   max-width: 530px;
 }
 
-.card-section{
+.card-section {
   max-width: 1370px;
-
 }
 
 .card {
+  &__desc-container {
+  }
 
-		&__desc-container {
-		}
+  &__name-categore {
+    color: rgb(23, 30, 29);
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.2;
+  }
 
-		&__name-categore {
-		}
+  &__name-title {
+    color: rgb(23, 30, 29);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+  }
 
-		&__name-title {
-		}
+  &-starts {
+    color: rgb(0, 194, 159);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.2;
+    text-decoration-line: underline;
+  }
 
-		&__name-raiting {
-		}
+  &__name-raiting {
+  }
 
-		&__name-desc {
-		}
+  &__name-desc {
+    color: rgb(23, 30, 29);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.2;
+  }
 
-		&__footer {
-		}
+  &__footer {
+  }
 
-		&__price {
-		}
+  &__price {
+    color: rgb(23, 30, 29);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0.2;
+  }
 
-		&__trend {
-		}
+  &-btn {
+    padding: 12px 0;
+    border-radius: 6px;
+
+    background: rgb(0, 194, 159);
+  }
+
+  &__trend {
+  }
+
+  &-host {
+    color: rgb(120, 120, 120);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.2;
+
+    &-title {
+      color: rgb(23, 30, 29);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: 0.2;
+    }
+
+    &-desc {
+      color: rgb(122, 122, 122);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0.2;
+    }
+  }
+
+  &-sup {
+    border-radius: 17px;
+
+    background: rgb(222, 255, 249);
+  }
 }
-
-
-
-

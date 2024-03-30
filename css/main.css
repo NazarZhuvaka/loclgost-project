@@ -902,4 +902,70 @@ input {
 
 .card-section {
   max-width: 1370px;
+}
+
+.card__name-categore {
+  color: rgb(23, 30, 29);
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.2;
+}
+.card__name-title {
+  color: rgb(23, 30, 29);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.card-starts {
+  color: rgb(0, 194, 159);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.2;
+  text-decoration-line: underline;
+}
+.card__name-desc {
+  color: rgb(23, 30, 29);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.2;
+}
+.card__price {
+  color: rgb(23, 30, 29);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0.2;
+}
+.card-btn {
+  padding: 12px 0;
+  border-radius: 6px;
+  background: rgb(0, 194, 159);
+}
+.card-host {
+  color: rgb(120, 120, 120);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.2;
+}
+.card-host-title {
+  color: rgb(23, 30, 29);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.2;
+}
+.card-host-desc {
+  color: rgb(122, 122, 122);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.2;
+}
+.card-sup {
+  border-radius: 17px;
+  background: rgb(222, 255, 249);
 }/*# sourceMappingURL=main.css.map */
