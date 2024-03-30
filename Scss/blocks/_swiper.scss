@@ -1,4 +1,35 @@
 .swiper {
-    width: 600px;
-    height: 300px;
+  width: 600px;
+  height: 300px;
+
+  &-block{
+    height: 410px;
   }
+
+  &-wrapper {
+    cursor: pointer;
+    img{
+      border-radius: 8px;
+    }
+    &-low{
+      height: 90px !important;
+    }
+  }
+}
+
+.mySwiper2 {
+  margin-bottom: 10px;
+}
+
+.card-info{
+  display: flex;
+}
+
+.card-name{
+  background: chocolate;
+  border-radius: 7px;
+  border: 1px solid green;
+  max-width: 530px;
+}
+
+

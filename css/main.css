@@ -833,14 +833,13 @@ input {
   opacity: 1;
 }
 
-.card {
-  background-color: #f0f0f0;
+.cards__item {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(5px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
-.card.active {
+.cards__item.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -871,4 +870,31 @@ input {
 .swiper {
   width: 600px;
   height: 300px;
+}
+.swiper-block {
+  height: 410px;
+}
+.swiper-wrapper {
+  cursor: pointer;
+}
+.swiper-wrapper img {
+  border-radius: 8px;
+}
+.swiper-wrapper-low {
+  height: 90px !important;
+}
+
+.mySwiper2 {
+  margin-bottom: 10px;
+}
+
+.card-info {
+  display: flex;
+}
+
+.card-name {
+  background: chocolate;
+  border-radius: 7px;
+  border: 1px solid green;
+  max-width: 530px;
 }/*# sourceMappingURL=main.css.map */

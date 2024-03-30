@@ -210,7 +210,7 @@
 
 
 
-
+//підйом карток
 #cards-container{
     display: flex;
     justify-content: space-between;
@@ -230,7 +230,7 @@
 
 
 
-
+//show more
 .cards__item:nth-child(n+9){
     display: none;
 }

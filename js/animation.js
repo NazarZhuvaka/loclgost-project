@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', checkPosition);
 // 
 
 document.addEventListener("DOMContentLoaded", function() {
-  const cards = document.querySelectorAll('.card');
+  const cards = document.querySelectorAll('.cards__item');
 
   function revealCards() {
     cards.forEach(function(card, index) {
