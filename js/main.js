@@ -51,91 +51,78 @@ for (let btn of tabsBtns) {
 
 // Отримуємо посилання на SVG-елемент і його шлях за їхнім класом
 
-const likeButtons = document.querySelectorAll('.likeButton');
-const pathElements = document.querySelectorAll('.myPath');
+const likeButtons = document.querySelectorAll(".likeButton");
+const pathElements = document.querySelectorAll(".myPath");
 
 // Додаємо слухача подій для кожного елемента
 likeButtons.forEach((likeButton, index) => {
-    let isLiked = false;
+  let isLiked = false;
 
-    likeButton.addEventListener("click", function () {
-        if (!isLiked) {
-            pathElements[index].setAttribute("fill", "red");
-            pathElements[index].setAttribute("stroke", "red");
-            isLiked = true;
-        } else {
-            pathElements[index].setAttribute("fill", "none");
-            pathElements[index].setAttribute("stroke", "#171E1D");
-            isLiked = false;
-        }
-    });
+  likeButton.addEventListener("click", function () {
+    if (!isLiked) {
+      pathElements[index].setAttribute("fill", "red");
+      pathElements[index].setAttribute("stroke", "red");
+      isLiked = true;
+    } else {
+      pathElements[index].setAttribute("fill", "none");
+      pathElements[index].setAttribute("stroke", "#171E1D");
+      isLiked = false;
+    }
+  });
 });
-
 
 // drop menu
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const guestButton = document.getElementById("guestButton");
   const dropdownContent = document.getElementById("dropdownContent");
   const guestOption = document.getElementById("guestOption");
   const authOption = document.getElementById("authOption");
 
   // При кліку на кнопку відкрити/закрити випадаючий список
-  guestButton.addEventListener("click", function() {
+  guestButton.addEventListener("click", function () {
     dropdownContent.classList.toggle("show");
   });
 
   // При виборі "Guest"
-  guestOption.addEventListener("click", function() {
+  guestOption.addEventListener("click", function () {
     guestButton.querySelector("p").textContent = "Guest";
     dropdownContent.classList.remove("show");
   });
 
   // При виборі "Авторизований користувач"
-  authOption.addEventListener("click", function() {
+  authOption.addEventListener("click", function () {
     guestButton.querySelector("p").textContent = "User";
     dropdownContent.classList.remove("show");
   });
 
   // Закрити випадаючий список при кліку за межами нього
-  window.addEventListener("click", function(event) {
-    if (!event.target.matches('.find__form-guest')) {
+  window.addEventListener("click", function (event) {
+    if (!event.target.matches(".find__form-guest")) {
       const dropdowns = document.getElementsByClassName("dropdown-content");
       for (let i = 0; i < dropdowns.length; i++) {
         const openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
         }
       }
     }
   });
 });
 
-
-
 //btn show-more text
 
+const showMoreButton = document.querySelector(".show-more__about");
+const hiddenElements = document.querySelectorAll(".none");
 
-
-  const showMoreButton = document.querySelector('.show-more__about');
-
-  // showMoreButton.addEventListener('click', function() {
-  //   const hiddenElements = document.querySelectorAll('.none');
-  //   hiddenElements.forEach(function(element) {
-  //     element.addClassList('active');
-  //   });
-  //   this.textContent = (this.textContent === 'Show more') ? 'Show less' : 'Show more';
-  // });
-
-  showMoreButton.addEventListener('click', function() {
-    console.log('click')
-  })
-
-
-  
-
-  
-
-  
-
-
+showMoreButton.addEventListener("click", function () {
+  hiddenElements.forEach(function (element) {
+    if (showMoreButton.textContent === "Show more") {
+      element.classList.remove("none");
+    } else {
+      element.classList.add("none");
+    }
+  });
+  showMoreButton.textContent =
+    showMoreButton.textContent === "Show more" ? "Show less" : "Show more";
+});
