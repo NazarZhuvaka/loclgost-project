@@ -889,23 +889,29 @@ input {
   margin-bottom: 10px;
 }
 
-.card-info {
+.mySwiper {
+  height: 86px;
+}
+
+.card-name__desc-container {
   display: flex;
   justify-content: space-between;
 }
-
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 44px;
+}
 .card-name {
   border: 1px solid rgb(232, 236, 242);
   border-radius: 7px;
   background: rgb(255, 255, 255);
   max-width: 530px;
-  padding: 37px 28px;
+  padding: 38px 28px;
 }
-
 .card-section {
   max-width: 1370px;
 }
-
 .card__name-starts {
   display: flex;
   gap: 6px;
@@ -937,6 +943,16 @@ input {
   font-size: 16px;
   font-weight: 400;
   line-height: 17px;
+  margin-bottom: 12px;
+}
+.card__name-raiting {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: 10px 9px 9px 9px;
+  border: 1px solid rgb(232, 236, 242);
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
 }
 .card__name-desc {
   color: rgb(23, 30, 29);
@@ -949,21 +965,29 @@ input {
 .card__footer {
   margin-bottom: 19px;
 }
-.card__price {
+.card-name__price {
   color: rgb(23, 30, 29);
   font-size: 36px;
   font-weight: 700;
   line-height: 39px;
   letter-spacing: 0.2;
 }
-.card__price::before {
+.card-name__price span {
+  color: rgb(23, 30, 29);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2;
+}
+.card-name__price::before {
+  content: attr(data-value);
   font-size: 36px;
 }
 .card__name-btn {
   padding: 12px 0;
   border-radius: 6px;
   margin-bottom: 28px;
-  background: rgb(0, 194, 159);
+  background: var(--c-primary);
   color: rgb(255, 255, 255);
   max-width: 474px;
   width: 100%;
@@ -972,6 +996,10 @@ input {
   line-height: 26px;
   letter-spacing: 0.46px;
   text-align: center;
+  transition: var(--transition);
+}
+.card__name-btn:hover {
+  opacity: 0.7;
 }
 .card-host {
   color: rgb(120, 120, 120);
@@ -1019,7 +1047,7 @@ input {
   padding: 8px 12px;
   border-radius: 17px;
   background: rgb(222, 255, 249);
-  color: rgb(0, 194, 159);
+  color: var(--c-primary);
   font-size: 16px;
   font-weight: 500;
   line-height: 17px;
