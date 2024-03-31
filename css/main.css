@@ -1119,9 +1119,24 @@ input {
 }
 
 .amenities {
+  padding-top: 30px;
   max-width: 1370px;
+}
+.amenities__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.2;
+  margin-bottom: 20px;
 }
 .amenities__advents {
   display: flex;
   gap: 50px;
+}
+.amenities__advents-item p {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  line-height: 17px;
+  padding-bottom: 16px;
 }/*# sourceMappingURL=main.css.map */
