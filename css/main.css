@@ -1052,4 +1052,32 @@ input {
   font-weight: 500;
   line-height: 17px;
   letter-spacing: -1;
+}
+
+.about__title {
+  color: rgb(23, 30, 29);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.2;
+  margin-bottom: 20px;
+}
+.about__info-text {
+  color: rgb(23, 30, 29);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 21px;
+  max-width: 830px;
+}
+.about__info-text span {
+  font-weight: 700;
+}
+.show-more__about {
+  color: var(--c-primary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.46px;
+  background: none;
 }/*# sourceMappingURL=main.css.map */
