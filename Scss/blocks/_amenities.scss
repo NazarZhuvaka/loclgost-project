@@ -26,6 +26,48 @@
   }
 
   &__map {
+
+    &-title{
+        h3{
+            color: rgb(23, 30, 29);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: 0.2px;
+            margin-bottom: 5px;
+        }
+
+        p{
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            color: rgb(23, 30, 29);
+            line-height: 17px;
+        }
+    }
+
+    &-info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-weather{
+        display: flex;
+        gap: 10px;
+
+        h3{
+            color: rgb(23, 30, 29);
+            font-weight: 600;
+            line-height: 150%;
+            margin-bottom: 2px;
+        }
+        p{
+            color: rgb(122, 122, 122);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15px;
+        }
+    }
   }
 }
 
@@ -40,4 +82,6 @@
   border-radius: 6px;
 }
 .amenities-info {
+    display: flex;
+    justify-content: space-between;
 }
