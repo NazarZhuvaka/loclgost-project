@@ -1060,6 +1060,10 @@ input {
   border-bottom: 1px solid rgb(232, 236, 242);
 }
 
+.about-container {
+  display: flex;
+  gap: 50px;
+}
 .about__title {
   color: rgb(23, 30, 29);
   font-size: 24px;
@@ -1079,6 +1083,32 @@ input {
 .about__info-text span {
   font-weight: 700;
 }
+.about__checks-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: rgb(122, 122, 122);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.2;
+  margin-bottom: 24px;
+}
+.about__checks-info img {
+  padding: 18px 18px;
+  border-radius: 8px;
+  background: rgb(221, 244, 240);
+}
+.about__checks-info-title {
+  font-weight: 600;
+  color: rgb(23, 30, 29);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.2;
+  margin-bottom: 2px;
+}
+
 .show-more__about {
   color: var(--c-primary);
   font-size: 16px;
@@ -1086,5 +1116,4 @@ input {
   line-height: 26px;
   letter-spacing: 0.46px;
   padding: 0;
-  background: none;
 }/*# sourceMappingURL=main.css.map */
