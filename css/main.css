@@ -1140,6 +1140,9 @@ input {
   line-height: 17px;
   padding-bottom: 16px;
 }
+.amenities__map-map {
+  margin-top: 20px;
+}
 .amenities__map-title h3 {
   color: rgb(23, 30, 29);
   font-size: 24px;
