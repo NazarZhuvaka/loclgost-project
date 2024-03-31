@@ -1,4 +1,7 @@
 .about-section {
+    max-width: 1370px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgb(232, 236, 242);
 }
 .about {
   &__title {
@@ -37,7 +40,7 @@
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 0.46px;
-
+    padding: 0;
     background: none;
   }
 }

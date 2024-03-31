@@ -1054,6 +1054,12 @@ input {
   letter-spacing: -1;
 }
 
+.about-section {
+  max-width: 1370px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgb(232, 236, 242);
+}
+
 .about__title {
   color: rgb(23, 30, 29);
   font-size: 24px;
@@ -1079,5 +1085,6 @@ input {
   font-weight: 600;
   line-height: 26px;
   letter-spacing: 0.46px;
+  padding: 0;
   background: none;
 }/*# sourceMappingURL=main.css.map */
