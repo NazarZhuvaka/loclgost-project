@@ -1355,4 +1355,19 @@ input {
 
 .stays__photo {
   position: relative;
+}
+
+.stays-sup {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: 8px;
+  color: var(--c-primary);
+  border-radius: 13px;
+  padding: 6px;
+  background: rgb(255, 255, 255);
+}
+
+.stays-link {
+  z-index: 10;
 }/*# sourceMappingURL=main.css.map */
