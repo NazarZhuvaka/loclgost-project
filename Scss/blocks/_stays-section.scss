@@ -1,5 +1,6 @@
 .stays {
     max-width: 1370px;
+    padding: 44px 15px 20px;
   &__title {
     color: rgb(23, 30, 29);
     font-size: 24px;
@@ -9,8 +10,8 @@
   }
 
   &__blocks {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 
@@ -22,7 +23,8 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    height: 143px;
   }
 
   &__blocks-title {
@@ -54,6 +56,14 @@
     align-items: center;
 
     margin-bottom: 20px;
+
+    a {
+        color: var(--c-primary);
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.46px;
+        
+      }
 }
 .stays-blocks-cont {
   &__price {

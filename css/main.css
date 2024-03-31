@@ -1257,6 +1257,7 @@ input {
 
 .stays {
   max-width: 1370px;
+  padding: 44px 15px 20px;
 }
 .stays__title {
   color: rgb(23, 30, 29);
@@ -1266,8 +1267,8 @@ input {
   letter-spacing: 0.2;
 }
 .stays__blocks {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 .stays__blocks-item {
@@ -1276,7 +1277,7 @@ input {
   background: rgb(255, 255, 255);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  height: 143px;
 }
 .stays__blocks-title {
   color: rgb(23, 30, 29);
@@ -1304,6 +1305,12 @@ input {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+}
+.stays-info a {
+  color: var(--c-primary);
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.46px;
 }
 
 .stays-blocks-cont__price {
