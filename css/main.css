@@ -1338,4 +1338,17 @@ input {
 
 .stays__item-img {
   border-radius: 10px 0 0 10px;
+}
+
+.img-heart {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.stays__photo {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
