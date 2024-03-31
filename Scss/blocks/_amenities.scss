@@ -1,34 +1,43 @@
-
 .amenities {
-    padding-top: 30px;
-    max-width: 1370px;
+  padding-top: 30px;
+  max-width: 1370px;
 
-		&__title {
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 26px;
-            letter-spacing: 0.2;
-            margin-bottom: 20px;
-		}
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.2;
+    margin-bottom: 20px;
+  }
 
-		&__advents {
-            display: flex;
-            gap: 50px;
-		}
+  &__advents {
+    display: flex;
+    gap: 50px;
+  }
 
-		&__advents-item {
+  &__advents-item {
+    p {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      line-height: 17px;
+      padding-bottom: 16px;
+    }
+  }
 
-            p{
-                display: flex;
-                align-items: center;
-                gap: 13px;
-                line-height: 17px;
-                padding-bottom: 16px;
-            }
-		}
+  &__map {
+  }
+}
 
-		&__map {
-		}
+.show-all {
+  color: rgb(23, 30, 29);
+
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.46px;
+  padding: 11px 20px;
+  border: 1px solid rgb(23, 30, 29);
+  border-radius: 6px;
 }
 .amenities-info {
 }
