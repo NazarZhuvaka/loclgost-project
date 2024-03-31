@@ -1116,4 +1116,12 @@ input {
   line-height: 26px;
   letter-spacing: 0.46px;
   padding: 0;
+}
+
+.amenities {
+  max-width: 1370px;
+}
+.amenities__advents {
+  display: flex;
+  gap: 50px;
 }/*# sourceMappingURL=main.css.map */

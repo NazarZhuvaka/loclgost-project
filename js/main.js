@@ -126,3 +126,5 @@ showMoreButton.addEventListener("click", function () {
   showMoreButton.textContent =
     showMoreButton.textContent === "Show more" ? "Show less" : "Show more";
 });
+
+
