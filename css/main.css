@@ -1272,12 +1272,16 @@ input {
   gap: 20px;
 }
 .stays__blocks-item {
+  position: relative;
   border: 1px solid rgb(232, 236, 242);
   border-radius: 10px;
   background: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   height: 143px;
+}
+.stays__blocks-item a:hover::after {
+  display: none;
 }
 .stays__blocks-title {
   color: rgb(23, 30, 29);
