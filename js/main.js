@@ -111,3 +111,31 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+
+//btn show-more text
+
+
+
+  const showMoreButton = document.querySelector('.show-more__about');
+
+  // showMoreButton.addEventListener('click', function() {
+  //   const hiddenElements = document.querySelectorAll('.none');
+  //   hiddenElements.forEach(function(element) {
+  //     element.addClassList('active');
+  //   });
+  //   this.textContent = (this.textContent === 'Show more') ? 'Show less' : 'Show more';
+  // });
+
+  showMoreButton.addEventListener('click', function() {
+    console.log('click')
+  })
+
+
+  
+
+  
+
+  
+
+
