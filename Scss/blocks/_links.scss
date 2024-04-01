@@ -29,24 +29,11 @@
     grid-template-columns: 2fr 2fr 1fr 1fr;
 
     @include tablet{
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    }
-    @include mobile{
-    grid-template-columns: 1fr ;
-    gap: 30px;
-    justify-content: center;
-
-    justify-content: center;
-    display: grid;
-    }
-
-    @include mobile{
-        
         display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-        }
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 35px;
+    }
 }
 
 

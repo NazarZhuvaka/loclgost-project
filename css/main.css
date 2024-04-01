@@ -859,24 +859,10 @@ input {
 }
 @media (max-width: 992px) {
   .links-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-}
-@media (max-width: 576px) {
-  .links-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    justify-content: center;
-    justify-content: center;
-    display: grid;
-  }
-}
-@media (max-width: 576px) {
-  .links-grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 35px;
   }
 }
 
