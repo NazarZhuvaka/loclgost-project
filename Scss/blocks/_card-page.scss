@@ -8,7 +8,9 @@
     display: flex;
     justify-content: space-between;
 
-    height: 650px;
+    flex-wrap: wrap;
+
+    // height: 650px;
 
     padding: 20px 0 44px;
   }

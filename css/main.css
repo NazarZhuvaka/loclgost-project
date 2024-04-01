@@ -919,9 +919,6 @@ input {
   width: 782px;
   height: 438px;
 }
-.swiper-block {
-  height: 410px;
-}
 .swiper-wrapper {
   gap: 14px;
   cursor: pointer;
@@ -935,11 +932,6 @@ input {
 
 .mySwiper2 {
   margin-bottom: 10px;
-}
-@media (max-width: 1200px) {
-  .mySwiper2 {
-    display: none !important;
-  }
 }
 
 .mySwiper {
@@ -958,7 +950,7 @@ input {
 .card-info {
   display: flex;
   justify-content: space-between;
-  height: 650px;
+  flex-wrap: wrap;
   padding: 20px 0 44px;
 }
 .card-name {
@@ -1275,9 +1267,12 @@ input {
 }
 @media (max-width: 992px) {
   .reviews__blocks {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .reviews__blocks {
+    grid-template-columns: 1fr;
   }
 }
 .reviews__blocks-item {
@@ -1349,10 +1344,14 @@ input {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+@media (max-width: 992px) {
+  .stays__blocks {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (max-width: 768px) {
   .stays__blocks {
-    flex-wrap: wrap;
-    display: flex;
+    grid-template-columns: 1fr;
   }
 }
 .stays__blocks-item {

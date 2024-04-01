@@ -5,7 +5,6 @@
  
 
   &-block {
-    height: 410px;
   }
 
   &-wrapper {
@@ -23,9 +22,9 @@
 .mySwiper2 {
   margin-bottom: 10px;
 
-   @include desktop-small {
-    display: none !important;
-  }
+  //  @include desktop-small {
+  //   display: none !important;
+  // }
 }
 
 .mySwiper {
