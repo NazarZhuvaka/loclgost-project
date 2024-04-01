@@ -128,3 +128,33 @@ showMoreButton.addEventListener("click", function () {
 });
 
 
+
+// password
+
+var a;
+function pass(){
+  if(a==1){
+    document.getElementById('password').type='password';
+    document.getElementById('pass-icon').src='./../img/icons/lock.svg';
+    a=0;
+  } else {
+    document.getElementById('password').type='text';
+    document.getElementById('pass-icon').src='./../img/icons/lock.svg';
+    a=1;
+  }
+}
+
+var a;
+function pass2(){
+  if(a==1){
+    document.getElementById('password2').type='password';
+    document.getElementById('pass-icon2').src='./../img/icons/lock.svg';
+    a=0;
+  } else {
+    document.getElementById('password2').type='text';
+    document.getElementById('pass-icon2').src='./../img/icons/lock.svg';
+    a=1;
+  }
+}
+
+

@@ -1496,6 +1496,7 @@ input {
   max-width: 589px;
   margin-inline: auto;
   border-radius: 8px;
+  padding: 40px 48px;
 }
 .singup__title {
   color: rgb(23, 30, 29);
@@ -1505,6 +1506,22 @@ input {
   letter-spacing: 0.2px;
   margin-bottom: 24px;
 }
+.singup__label {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 15px;
+  padding-right: 20px;
+}
+.singup__label input {
+  width: 100%;
+  background: none;
+  border: none;
+}
 .singup__btn {
   border-radius: 6px;
   background: var(--c-primary);
@@ -1513,4 +1530,40 @@ input {
   font-weight: 600;
   line-height: 26px;
   letter-spacing: 0.46px;
+  margin-top: 11px;
+}
+.singup__desc {
+  margin-top: 37px;
+  color: rgb(23, 30, 29);
+  line-height: 160%;
+  letter-spacing: 0.2px;
+}
+.singup__blocks-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  margin-bottom: 38px;
+}
+.singup__link {
+  padding: 25px 50px;
+  border-radius: 8px;
+  background: rgb(248, 248, 248);
+  text-align: center;
+}
+.singup__link img {
+  margin-bottom: 18px;
+}
+.singup__login {
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.singup__login a {
+  color: var(--c-primary);
+}
+
+.singup-form {
+  padding-bottom: 37px;
+  border-bottom: 1.57px solid rgb(236, 236, 236);
 }/*# sourceMappingURL=main.css.map */

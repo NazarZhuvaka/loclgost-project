@@ -1,63 +1,113 @@
 .singup {
+  background-image: url(./../img/bg-login.png);
+  //   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1440 / 1084;
+  height: 100%;
 
-    background-image: url(./../img/bg-login.png);
-//   background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    aspect-ratio: 1440 / 1084;
-    height: 100%;
+  padding: 171px 0 171px;
 
-padding: 171px 0 171px;
+  &__block {
+    background: rgb(255, 255, 255);
+    max-width: 589px;
+    margin-inline: auto;
+    border-radius: 8px;
 
-    &__block {
-        background: rgb(255, 255, 255);
-        max-width: 589px;
-        margin-inline: auto;
-        border-radius: 8px;
+    padding: 40px 48px;
+  }
+
+  &__title {
+    color: rgb(23, 30, 29);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 4px;
+
+    background: rgb(255, 255, 255);
+
+    margin-bottom: 15px;
+
+    padding-right: 20px;
+
+    input {
+      width: 100%;
+      background: none;
+      border: none;
     }
+  }
 
-    &__title {
-        color: rgb(23, 30, 29);
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 28px;
-        letter-spacing: 0.2px;
+  &__btn {
+    border-radius: 6px;
+    background: var(--c-primary);
 
-        margin-bottom: 24px;
+    padding: 13px 50px;
+
+    color: rgb(255, 255, 255);
+
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.46px;
+
+    margin-top: 11px;
+  }
+
+  &__desc {
+    margin-top: 37px;
+    color: rgb(23, 30, 29);
+    line-height: 160%;
+    letter-spacing: 0.2px;
+  }
+
+  &__blocks-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 12px;
+    margin-bottom: 38px;
+  }
+
+  &__link {
+    padding: 25px 50px;
+    border-radius: 8px;
+
+    background: rgb(248, 248, 248);
+
+    text-align: center;
+
+    img {
+      margin-bottom: 18px;
     }
+  }
 
-    &__label {
+  &__link-name {
+  }
+
+  &__login {
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    text-align: center;
+
+    a{
+        color: var(--c-primary);
     }
-
-    &__btn {
-        border-radius: 6px;
-        background: var(--c-primary);
-
-        padding: 13px 50px;
-
-        color: rgb(255, 255, 255);
-
-        font-weight: 600;
-        line-height: 26px;
-        letter-spacing: 0.46px;
-    }
-
-    &__desc {
-    }
-
-    &__blocks-links {
-    }
-
-    &__link {
-    }
-
-    &__link-name {
-    }
-
-    &__login {
-    }
+  }
 }
 .singup-form {
-}
-.btn {
+  padding-bottom: 37px;
+  border-bottom: 1.57px solid rgb(236, 236, 236);
+  
 }
