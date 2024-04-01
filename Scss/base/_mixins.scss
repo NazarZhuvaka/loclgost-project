@@ -11,6 +11,12 @@
 	}
 }
 
+@mixin desktop-mini {
+	@media (max-width: $desktop-mini) {
+		@content;
+	}
+}
+
 @mixin tablet-midle {
 	@media (max-width: $tablet-midle) {
 		@content;
@@ -19,6 +25,11 @@
 
 @mixin tablet-small {
 	@media (max-width: $tablet-small) {
+		@content;
+	}
+}
+@mixin tablet-mini {
+	@media (max-width: $tablet-mini) {
 		@content;
 	}
 }

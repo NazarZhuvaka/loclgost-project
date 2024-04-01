@@ -614,13 +614,17 @@ a:hover {
 .find__form {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 14px;
   padding: 10px 12px;
   border: 0.7px solid rgb(232, 236, 242);
   border-radius: 10px;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.02);
   background: rgb(255, 255, 255);
+}
+@media (max-width: 1020px) {
+  .find__form {
+    flex-wrap: wrap;
+  }
 }
 .find__form-search {
   justify-content: center;
@@ -650,12 +654,17 @@ a:hover {
   gap: 5px;
   border-radius: 4px;
   background: rgb(255, 255, 255);
-  padding: 0 12px;
+  padding: 21px 12px;
   width: 173px;
 }
 .find__form-date {
   display: flex;
   gap: 14px;
+}
+@media (max-width: 640px) {
+  .find__form-date {
+    flex-wrap: wrap;
+  }
 }
 .find__form-accom {
   display: flex;
