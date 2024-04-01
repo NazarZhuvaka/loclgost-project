@@ -1196,6 +1196,7 @@ input {
 .amenities__advents {
   display: flex;
   gap: 50px;
+  flex-wrap: wrap;
 }
 .amenities__advents-item p {
   display: flex;
@@ -1256,6 +1257,7 @@ input {
 .amenities-info {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 @media (max-width: 768px) {
   .amenities-info {

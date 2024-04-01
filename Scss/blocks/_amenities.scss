@@ -13,6 +13,7 @@
   &__advents {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
   }
 
   &__advents-item {
@@ -88,6 +89,7 @@
 .amenities-info {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 
     @include tablet-small{
       flex-wrap: wrap-reverse;
