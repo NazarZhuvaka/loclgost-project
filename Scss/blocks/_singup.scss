@@ -80,6 +80,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 14px;
 
+    @include tablet-mini {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr ;
+    }
+
     margin-top: 12px;
     margin-bottom: 38px;
   }

@@ -1550,6 +1550,16 @@ input {
   margin-top: 12px;
   margin-bottom: 38px;
 }
+@media (max-width: 640px) {
+  .singup__blocks-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .singup__blocks-links {
+    grid-template-columns: 1fr;
+  }
+}
 .singup__link {
   padding: 25px 50px;
   border-radius: 8px;
