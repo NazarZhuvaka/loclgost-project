@@ -22,6 +22,11 @@
       flex-wrap: wrap;
     }
 
+    @include tablet-mini{
+      justify-content: center;
+    }
+    
+
     &-search {
       justify-content: center;
       display: flex;
@@ -48,6 +53,10 @@
       &:hover{
         opacity: 0.8;
       }
+
+      @include tablet-mini{
+        margin-inline: auto;
+    }
     }
 
     &-guest {
@@ -114,6 +123,10 @@
         width: 100%;
         background: none;
         border: none;
+      }
+
+      @include tablet-mini{
+        max-width: 403px;
       }
     }
   }

@@ -475,6 +475,7 @@ a:hover {
 .card-container ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 .card__link {
@@ -626,6 +627,11 @@ a:hover {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 640px) {
+  .find__form {
+    justify-content: center;
+  }
+}
 .find__form-search {
   justify-content: center;
   display: flex;
@@ -644,6 +650,11 @@ a:hover {
 }
 .find__form-search:hover {
   opacity: 0.8;
+}
+@media (max-width: 640px) {
+  .find__form-search {
+    margin-inline: auto;
+  }
 }
 .find__form-guest {
   position: relative;
@@ -697,6 +708,11 @@ a:hover {
   width: 100%;
   background: none;
   border: none;
+}
+@media (max-width: 640px) {
+  .find__form-accom {
+    max-width: 403px;
+  }
 }
 .find__title {
   font-size: 40.4px;
@@ -840,6 +856,28 @@ input {
 .links-grid {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
+}
+@media (max-width: 992px) {
+  .links-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .links-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-content: center;
+    justify-content: center;
+    display: grid;
+  }
+}
+@media (max-width: 576px) {
+  .links-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .links {
