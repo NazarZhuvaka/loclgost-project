@@ -200,5 +200,9 @@
     font-weight: 500;
     line-height: 17px;
     letter-spacing: -1;
+
+    @include mobile{
+      font-size: 12px;
+    }
   }
 }

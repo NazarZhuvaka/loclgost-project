@@ -715,15 +715,25 @@ a:hover {
   }
 }
 .find__title {
-  font-size: 40.4px;
+  font-size: clamp(2rem, 1.908rem + 0.67vw, 2.5rem);
   max-width: 577px;
   font-weight: 700;
   line-height: 110%;
   margin-bottom: 8px;
 }
+@media (max-width: 576px) {
+  .find__title {
+    font-size: 27px;
+  }
+}
+@media (max-width: 380px) {
+  .find__title {
+    font-size: 24px;
+  }
+}
 .find__desc {
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: clamp(0.875rem, 0.806rem + 0.5vw, 1.25rem);
   font-weight: 300;
   line-height: 120%;
   margin-bottom: 24px;
@@ -1113,6 +1123,11 @@ input {
   font-weight: 500;
   line-height: 17px;
   letter-spacing: -1;
+}
+@media (max-width: 576px) {
+  .card-sup {
+    font-size: 12px;
+  }
 }
 
 .about-section {
