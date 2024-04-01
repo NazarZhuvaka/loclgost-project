@@ -936,9 +936,19 @@ input {
 .mySwiper2 {
   margin-bottom: 10px;
 }
+@media (max-width: 1200px) {
+  .mySwiper2 {
+    display: none !important;
+  }
+}
 
 .mySwiper {
   height: 86px;
+}
+@media (max-width: 1200px) {
+  .mySwiper {
+    display: none !important;
+  }
 }
 
 .card-name__desc-container {
@@ -948,6 +958,7 @@ input {
 .card-info {
   display: flex;
   justify-content: space-between;
+  height: 650px;
   padding: 20px 0 44px;
 }
 .card-name {
@@ -1112,6 +1123,11 @@ input {
   display: flex;
   gap: 50px;
 }
+@media (max-width: 768px) {
+  .about-container {
+    flex-wrap: wrap;
+  }
+}
 .about__title {
   color: rgb(23, 30, 29);
   font-size: 24px;
@@ -1241,6 +1257,11 @@ input {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .amenities-info {
+    flex-wrap: wrap-reverse;
+  }
+}
 
 .reviews {
   max-width: 1370px;
@@ -1249,6 +1270,13 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+@media (max-width: 992px) {
+  .reviews__blocks {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+  }
 }
 .reviews__blocks-item {
   padding: 24px;
@@ -1318,6 +1346,12 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .stays__blocks {
+    flex-wrap: wrap;
+    display: flex;
+  }
 }
 .stays__blocks-item {
   position: relative;

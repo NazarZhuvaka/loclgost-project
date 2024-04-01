@@ -2,6 +2,8 @@
   width: 782px;
   height: 438px;
 
+ 
+
   &-block {
     height: 410px;
   }
@@ -20,10 +22,18 @@
 
 .mySwiper2 {
   margin-bottom: 10px;
+
+   @include desktop-small {
+    display: none !important;
+  }
 }
 
 .mySwiper {
   height: 86px;
+
+   @include desktop-small {
+    display: none !important;
+  }
 }
 
 

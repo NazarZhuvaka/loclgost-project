@@ -88,4 +88,8 @@
 .amenities-info {
     display: flex;
     justify-content: space-between;
+
+    @include tablet-small{
+      flex-wrap: wrap-reverse;
+    }
 }

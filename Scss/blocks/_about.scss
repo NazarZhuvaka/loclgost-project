@@ -7,6 +7,10 @@
   &-container {
     display: flex;
     gap: 50px;
+    @include tablet-small{
+      flex-wrap: wrap;
+    }
+    
   }
   &__title {
     color: rgb(23, 30, 29);

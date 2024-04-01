@@ -8,6 +8,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 20px;
+    }
   }
 
   &__blocks-item {
@@ -67,6 +73,5 @@
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 0.46px;
-    
   }
 }
