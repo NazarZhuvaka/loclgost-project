@@ -65,6 +65,11 @@
       padding: 21px 12px;
 
       width: 173px;
+
+        @include tablet-mini{
+          width: 100%;
+
+      }
     }
 
     &-date {
@@ -74,6 +79,20 @@
       @include tablet-mini{
         flex-wrap: wrap;
       }
+
+      div{
+        @include tablet-mini{
+          width: 100%;
+          
+        }
+      }
+
+      input{
+        @include tablet-mini{
+          width: 100%;
+      }
+    }
+      
     }
 
     &-accom {

@@ -657,6 +657,11 @@ a:hover {
   padding: 21px 12px;
   width: 173px;
 }
+@media (max-width: 640px) {
+  .find__form-guest {
+    width: 100%;
+  }
+}
 .find__form-date {
   display: flex;
   gap: 14px;
@@ -664,6 +669,16 @@ a:hover {
 @media (max-width: 640px) {
   .find__form-date {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 640px) {
+  .find__form-date div {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .find__form-date input {
+    width: 100%;
   }
 }
 .find__form-accom {
