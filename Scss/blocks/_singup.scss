@@ -10,15 +10,36 @@
 padding: 171px 0 171px;
 
     &__block {
+        background: rgb(255, 255, 255);
+        max-width: 589px;
+        margin-inline: auto;
+        border-radius: 8px;
     }
 
     &__title {
+        color: rgb(23, 30, 29);
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+
+        margin-bottom: 24px;
     }
 
     &__label {
     }
 
     &__btn {
+        border-radius: 6px;
+        background: var(--c-primary);
+
+        padding: 13px 50px;
+
+        color: rgb(255, 255, 255);
+
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.46px;
     }
 
     &__desc {
