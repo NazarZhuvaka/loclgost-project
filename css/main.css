@@ -1550,9 +1550,6 @@ input {
   margin-top: 12px;
   margin-bottom: 38px;
 }
-.singup__blocks-links:nth-child(2) {
-  padding: 15px;
-}
 .singup__link {
   padding: 25px 50px;
   border-radius: 8px;
