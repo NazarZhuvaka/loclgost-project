@@ -100,7 +100,6 @@
 
 .stays__blocks-cont {
   padding-left: 16px;
-  padding-right: 49px;
 }
 
 .stays__item-img {
@@ -119,6 +118,9 @@
 
 .stays__photo {
   position: relative;
+  img{
+    max-width: max-content;
+  }
 }
 
 .stays-sup {

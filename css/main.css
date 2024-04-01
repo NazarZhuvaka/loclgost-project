@@ -933,6 +933,11 @@ input {
 .mySwiper2 {
   margin-bottom: 10px;
 }
+@media (max-width: 870px) {
+  .mySwiper2 {
+    display: none !important;
+  }
+}
 
 .mySwiper {
   height: 86px;
@@ -952,6 +957,11 @@ input {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px 0 44px;
+}
+@media (max-width: 1400px) {
+  .card-info {
+    justify-content: center;
+  }
 }
 .card-name {
   border: 1px solid rgb(232, 236, 242);
@@ -1420,7 +1430,6 @@ input {
 
 .stays__blocks-cont {
   padding-left: 16px;
-  padding-right: 49px;
 }
 
 .stays__item-img {
@@ -1438,6 +1447,10 @@ input {
 
 .stays__photo {
   position: relative;
+}
+.stays__photo img {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .stays-sup {

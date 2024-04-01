@@ -22,9 +22,9 @@
 .mySwiper2 {
   margin-bottom: 10px;
 
-  //  @include desktop-small {
-  //   display: none !important;
-  // }
+   @include tablet-midle {
+    display: none !important;
+  }
 }
 
 .mySwiper {

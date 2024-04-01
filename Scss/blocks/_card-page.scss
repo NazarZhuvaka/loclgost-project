@@ -10,9 +10,11 @@
 
     flex-wrap: wrap;
 
-    // height: 650px;
-
     padding: 20px 0 44px;
+
+    @include desktop{
+      justify-content: center;
+    }
   }
 
   &-name {
