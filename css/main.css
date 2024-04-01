@@ -1481,4 +1481,13 @@ input {
 
 .stays-link {
   z-index: 10;
+}
+
+.singup {
+  background-image: url(./../img/bg-login.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1440/1084;
+  height: 100%;
+  padding: 171px 0 171px;
 }/*# sourceMappingURL=main.css.map */
