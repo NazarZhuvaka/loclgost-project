@@ -154,6 +154,11 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+  display: none;
+}
+
 body {
   font-family: var(--ff);
   color: var(--c-text);
@@ -1539,11 +1544,14 @@ input {
   letter-spacing: 0.2px;
 }
 .singup__blocks-links {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
   margin-top: 12px;
   margin-bottom: 38px;
+}
+.singup__blocks-links:nth-child(2) {
+  padding: 15px;
 }
 .singup__link {
   padding: 25px 50px;
@@ -1553,6 +1561,11 @@ input {
 }
 .singup__link img {
   margin-bottom: 18px;
+}
+.singup__link-name {
+  color: rgb(120, 120, 120);
+  line-height: 17px;
+  letter-spacing: 0.24px;
 }
 .singup__login {
   line-height: 160%;
@@ -1566,4 +1579,12 @@ input {
 .singup-form {
   padding-bottom: 37px;
   border-bottom: 1.57px solid rgb(236, 236, 236);
+}
+
+.pass-icon2 {
+  cursor: pointer;
+}
+
+.pass-icon {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

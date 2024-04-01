@@ -72,12 +72,20 @@
   }
 
   &__blocks-links {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
 
     margin-top: 12px;
     margin-bottom: 38px;
+
+    &:nth-child(2){
+        padding: 15px;
+    }
   }
 
   &__link {
@@ -94,6 +102,9 @@
   }
 
   &__link-name {
+    color: rgb(120, 120, 120);
+    line-height: 17px;
+    letter-spacing: 0.24px;
   }
 
   &__login {
@@ -110,4 +121,11 @@
   padding-bottom: 37px;
   border-bottom: 1.57px solid rgb(236, 236, 236);
   
+}
+
+.pass-icon2{
+    cursor: pointer;
+}
+.pass-icon{
+    cursor: pointer;
 }
